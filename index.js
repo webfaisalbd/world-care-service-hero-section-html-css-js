@@ -6,13 +6,38 @@ let elder = document.getElementById("elder");
 
 
 child.onclick = function(){
-    heroImg.src = "images/baby.png";
+    var value = "images/baby.png";
+    heroImg.src = value;
+    imageMagnify(value);
 }
 
 autism.onclick = function(){
-    heroImg.src = "images/autism.png";
+    var value = "images/autism.png";
+    heroImg.src = value;
+    imageMagnify(value);
 }
 
 elder.onclick = function(){
-    heroImg.src = "images/senior.png";
+    var value = "images/senior.png";
+    heroImg.src = value;
+    imageMagnify(value);
+}
+
+
+var value = "images/rightSide.png";
+imageMagnify(value);
+
+function imageMagnify(value){
+
+    document.getElementById("hero-img").src = value;
+
+        var options1 = {
+            width: 400,
+            zoomWidth: 500,
+            zoomPosition: "left",
+            fillContainer: true,
+            offset: { vertical: 10, horizontal: 10 }
+        };
+
+        new ImageZoom(document.getElementById("img-container"), options1);
 }

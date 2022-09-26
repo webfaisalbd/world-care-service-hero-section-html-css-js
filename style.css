@@ -73,12 +73,16 @@ main .content-left {
 main .content-right {
     width: 50%;
     /* border: 2px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .content-right img {
-    margin-top: 2%;
-    width: 90%;
+    margin-top: 5%;
+    width: 400px;
     height: 90%;
+    /* border: 2px solid red; */
 }
 
 .content-left h1 {
@@ -103,6 +107,7 @@ main .content-right {
     font-weight: 700;
     text-transform: uppercase;
     border-radius: 50px;
+    cursor: pointer;
 
 }
 
