@@ -176,9 +176,10 @@ main .content-right {
     .main {
         display: flex;
         flex-direction: column;
-        gap: 25%;
+        gap: 10%;
     }
     .main .content-left {
+        margin-top: 15%;
         width: 100%;
         display: flex;
         justify-content: center;
